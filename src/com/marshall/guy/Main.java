@@ -25,12 +25,22 @@ public class Main {
         System.out.print("Number: ");
         int userInput = scanner.nextInt();
 
-        for (int i = 2; i <= userInput; i++) {
-            boolean isPrime = isPrimeNumber(i);
+        int primeNumberCount = 0;
+        int number = 2;
+        while (primeNumberCount < userInput) {
+            boolean isPrime = isPrimeNumber(number);
             if (isPrime) {
-                System.out.println(i + " is a prime number.");
+                primeNumberCount++;
+                System.out.printf("%d: %d%n", primeNumberCount, number);
             }
+            number++;
         }
+//        for (int i = 2; i <= userInput; i++) {
+//            boolean isPrime = isPrimeNumber(i);
+//            if (isPrime) {
+//                System.out.println(i + " is a prime number.");
+//            }
+//        }
 
     }
 }
