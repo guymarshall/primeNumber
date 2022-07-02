@@ -22,11 +22,6 @@ public class Main {
             }
         }
 
-//        for (int i = 2; i <= ceilingRoot; i++) {
-//            if (number % i == 0) {
-//                return false;
-//            }
-//        }
         return true;
     }
 
